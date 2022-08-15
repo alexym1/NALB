@@ -11,8 +11,7 @@ a “bridge” between Python and R.
 
 ## System requirements
 
-The package works on linux systems and optimized for Ubuntu 20.4 and
-Debian 10.
+The package works on linux systems and optimized for Ubuntu 20.4.
 
 ## Installation
 

@@ -21,7 +21,7 @@ The `NALB` package has been designed to provide an R interface to Python autoML 
 
 ## System requirements
 
-The package works on linux systems and optimized for Ubuntu 20.4 and Debian 10.
+The package works on linux systems and optimized for Ubuntu 20.4.
 
 ## Installation
 
