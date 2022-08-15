@@ -14,9 +14,9 @@ install_pycaret <- function(python_version = "3.8.13") {
 
   if(!("r-pycaret" %in% conda_list()[,1])){
 
-    Sys.setenv("RETICULATE_MINICONDA_PYTHON_VERSION" = python_version)
+    python <- paste("python", python_version, sep = "=")
 
-    conda_create(envname = "r-pycaret")
+    conda_create(envname = "r-pycaret", packages = c(python, "numpy"))
     use_condaenv(condaenv = "r-pycaret", required = TRUE)
     conda_install(envname = "r-pycaret", packages = "pycaret", pip = TRUE)
 

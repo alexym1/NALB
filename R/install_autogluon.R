@@ -14,9 +14,9 @@ install_autogluon <- function(python_version = "3.8.13") {
 
   if(!("r-autogluon" %in% conda_list()[,1])){
 
-    Sys.setenv("RETICULATE_MINICONDA_PYTHON_VERSION" = python_version)
+    python <- paste("python", python_version, sep = "=")
 
-    conda_create(envname = "r-autogluon")
+    conda_create(envname = "r-autogluon", packages = c(python, "numpy"))
     use_condaenv(condaenv = "r-autogluon", required = TRUE)
     conda_install(envname = "r-autogluon", packages = "autogluon", pip = TRUE)
 

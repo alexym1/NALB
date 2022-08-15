@@ -14,9 +14,9 @@ install_autokeras <- function(python_version = "3.8.13") {
 
   if(!("r-autokeras" %in% conda_list()[,1])){
 
-    Sys.setenv("RETICULATE_MINICONDA_PYTHON_VERSION" = python_version)
+    python <- paste("python", python_version, sep = "=")
 
-    conda_create(envname = "r-autokeras")
+    conda_create(envname = "r-autokeras", packages = c(python, "numpy"))
     use_condaenv(condaenv = "r-autokeras", required = TRUE)
     conda_install(envname = "r-autokeras", packages = "autokeras", pip = TRUE)
 
