@@ -15,3 +15,5 @@ LazyData: true
 Imports: 
     reticulate
 RoxygenNote: 7.2.1
+URL: https://github.com/geneseng/NALB
+BugReports: https://github.com/geneseng/NALB/issues

@@ -9,8 +9,6 @@ The `NALB` package has been designed to provide an R interface to Python
 autoML libraries. `NALB` runs on top of the `reticulate` package making
 a “bridge” between Python and R.
 
-to use any autoML libraries.
-
 ## System requirements
 
 The package works on linux systems and optimized for Ubuntu 20.4 and
