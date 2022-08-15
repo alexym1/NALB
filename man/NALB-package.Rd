@@ -8,6 +8,14 @@
 \description{
 Provide an R interface to autoML libraries wrote in python.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/geneseng/NALB}
+  \item Report bugs at \url{https://github.com/geneseng/NALB/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Alex Yahiaoui Martinez \email{yahiaoui-martinez.alex@geneseng.com}
 
