@@ -1,0 +1,17 @@
+Package: NALB
+Type: Package
+Title: An R tool embedding the most famous Python autoML libraries
+Version: 1.0
+Authors@R: 
+    person(given = "Alex",
+           family = "Yahiaoui Martinez",
+           role = c("aut", "cre"),
+           email = "yahiaoui-martinez.alex@geneseng.com")
+Maintainer: Alex Yahiaoui Martinez <yahiaoui-martinez.alex@geneseng.com>
+Description: Provide an R interface to autoML libraries wrote in python.
+License: Apache License (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    reticulate
+RoxygenNote: 7.2.1
