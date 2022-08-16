@@ -14,5 +14,5 @@ Install Autogluon and its dependencies
 }
 \details{
 Once Autogluon has been installed, you can activate the conda
-environment using `use_condaenv("r-autogluon")`
+environment using `reticulate::use_condaenv("r-autogluon", conda = conda_binary(), required = TRUE)`
 }

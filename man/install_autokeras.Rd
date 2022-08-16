@@ -14,5 +14,5 @@ Install AutoKeras and its dependencies
 }
 \details{
 Once Autokeras has been installed, you can activate the conda
-environment using `use_condaenv("r-autokeras")`
+environment using `reticulate::use_condaenv("r-autokeras", conda = conda_binary(), required = TRUE)`
 }

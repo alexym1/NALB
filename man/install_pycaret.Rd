@@ -14,5 +14,5 @@ Install PyCaret and its dependencies
 }
 \details{
 Once Pycaret has been installed, you can activate the conda
-environment using `use_condaenv("r-pycaret")`
+environment using `reticulate::use_condaenv("r-pycaret", conda = conda_binary(), required = TRUE)`
 }

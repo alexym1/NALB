@@ -3,7 +3,7 @@
 #' @param python_version By default, the version is 3.8.13.
 #'
 #' @details Once Pycaret has been installed, you can activate the conda
-#' environment using `use_condaenv("r-pycaret")`
+#' environment using `reticulate::use_condaenv("r-pycaret", conda = conda_binary(), required = TRUE)`
 #'
 #' @export
 install_pycaret <- function(python_version = "3.8.13") {
@@ -17,20 +17,13 @@ install_pycaret <- function(python_version = "3.8.13") {
     python <- paste("python", python_version, sep = "=")
 
     conda_create(envname = "r-pycaret", packages = c(python, "numpy"))
-    use_condaenv(condaenv = "r-pycaret", required = TRUE)
     conda_install(envname = "r-pycaret", packages = "pycaret", pip = TRUE)
 
-    message("PyCaret has been correctly installed!")
-    message('Activate the conda environment with `use_condaenv("r-pycaret")`')
-    message('e.i pycaret.classification <- import("pycaret.classification")')
-
-  } else {
-
-    message("PyCaret has been already installed!")
-    message('Activate the conda environment with `use_condaenv("r-pycaret")`')
-    message('e.i pycaret.classification <- import("pycaret.classification")')
-
   }
+
+  message("PyCaret has been correctly installed!")
+  message('Activate the conda environment with `reticulate::use_condaenv(condaenv = "r-pycaret", conda = conda_binary(), required = TRUE)`')
+  message('e.i pycaret.classification <- reticulate::import("pycaret.classification")')
 
 }
 
