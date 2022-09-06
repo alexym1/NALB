@@ -3,11 +3,11 @@ FROM rocker/r-ver:4.1.0
 ## Install R packages
 RUN R -q -e 'install.packages("remotes")'
 RUN R -q -e 'remotes::install_github("rstudio/reticulate")'
+RUN R -q -e 'remotes::install_github("geneseng/NALB")'
 
-# Install Pycaret
+# Install Autogluon
 RUN R -q -e 'reticulate::install_miniconda()'
-RUN R -q -e 'reticulate::conda_create(envname = "r-pycaret", packages = c("python=3.8.13", "numpy"))'
-RUN R -q -e 'reticulate::conda_install(envname = "r-pycaret", packages = "pycaret", pip = TRUE)'
+RUN R -q -e 'NALB::install_pycaret()'
 
 
 # Modify Rprofile
@@ -20,5 +20,5 @@ EXPOSE 3838
 # [...]
 
 # Run in shell
-# sudo docker build -t demo-pycaret .
-# sudo docker run --rm -p 3838:3838 demo-pycaret
+# sudo docker build -t demo-autogluon .
+# sudo docker run --rm -p 3838:3838 demo-autogluon
