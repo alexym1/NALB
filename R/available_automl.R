@@ -4,12 +4,23 @@
 available_automl <- function() {
 
   df <- data.frame(
-    Library = c("AutoGluon", "AutoKeras", "PyCaret"),
-    Installation = c("install_autogluon()", "install_autokeras()", "install_pycaret()"),
+    Library = c(
+      "AutoGluon",
+      "AutoKeras",
+      "PyCaret",
+      "TPOT"
+    ),
+    Installation = c(
+      "install_autogluon()",
+      "install_autokeras()",
+      "install_pycaret()",
+      "install_autogluon()"
+    ),
     Conda = c(
       "reticulate::use_condaenv('r-autogluon', conda = conda_binary(), required = TRUE)",
       "reticulate::use_condaenv('r-autokeras', conda = conda_binary(), required = TRUE)",
-      "reticulate::use_condaenv('r-pycaret', conda = conda_binary(), required = TRUE)"
+      "reticulate::use_condaenv('r-pycaret', conda = conda_binary(), required = TRUE)",
+      "reticulate::use_condaenv('r-autogluon', conda = conda_binary(), required = TRUE)"
     )
   )
 

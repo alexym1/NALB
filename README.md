@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# NALB
+# NALB <a href=#><img src='inst/logo/NALB.png' align="right" height="139" /></a>
 
 ## No AutoML Left Behind
 
@@ -9,9 +9,19 @@ The `NALB` package has been designed to provide an R interface to Python
 autoML libraries. `NALB` runs on top of the `reticulate` package making
 a “bridge” between Python and R.
 
+Some `Dockerfiles` were designed to make autoML libraries in production.
+
 ## System requirements
 
-The package works on linux systems and optimized for Ubuntu 20.4.
+The package was only tested on linux systems and optimized for Ubuntu
+20.4 / Debian 10.
+
+## AutoML libraries
+
+<a href=#><img src='inst/logo/AutoGluon.png' height="139" /></a>
+<a href=#><img src='inst/logo/autokeras.jpg' height="139" /></a>
+<a href=#><img src='inst/logo/Pycaret.png' height="139" /></a>
+<a href=#><img src='inst/logo/tpot.jpg' height="139" /></a>
 
 ## Installation
 
