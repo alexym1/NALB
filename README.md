@@ -9,7 +9,7 @@ The `NALB` package has been designed to provide an R interface to Python
 autoML libraries. `NALB` runs on top of the `reticulate` package making
 a “bridge” between Python and R.
 
-Some `Dockerfiles` were designed to make autoML libraries in production.
+A `Dockerfile` was provided to use autoML libraries in production.
 
 ## System requirements
 

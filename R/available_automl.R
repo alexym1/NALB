@@ -14,13 +14,13 @@ available_automl <- function() {
       "install_autogluon()",
       "install_autokeras()",
       "install_pycaret()",
-      "install_autogluon()"
+      "install_tpot()"
     ),
     Conda = c(
       "reticulate::use_condaenv('r-autogluon', conda = conda_binary(), required = TRUE)",
       "reticulate::use_condaenv('r-autokeras', conda = conda_binary(), required = TRUE)",
       "reticulate::use_condaenv('r-pycaret', conda = conda_binary(), required = TRUE)",
-      "reticulate::use_condaenv('r-autogluon', conda = conda_binary(), required = TRUE)"
+      "reticulate::use_condaenv('r-tpot', conda = conda_binary(), required = TRUE)"
     )
   )
 

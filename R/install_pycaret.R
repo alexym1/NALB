@@ -9,7 +9,7 @@
 install_pycaret <- function(python_version = "3.8.13") {
 
   if(Sys.info()["sysname"] != "Linux"){
-    stop("Installation is available for Linux only.")
+    stop("The installation is only available for Linux.")
   }
 
   if(!("r-pycaret" %in% conda_list()[,1])){

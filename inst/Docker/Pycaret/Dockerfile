@@ -9,16 +9,11 @@ RUN R -q -e 'remotes::install_github("geneseng/NALB")'
 RUN R -q -e 'reticulate::install_miniconda()'
 RUN R -q -e 'NALB::install_pycaret()'
 
-
-# Modify Rprofile
-COPY requirements.R requirements.R
-RUN R -e 'source(file = "requirements.R")'
-
 EXPOSE 3838
 
 # Add code
 # [...]
 
 # Run in shell
-# sudo docker build -t demo-autogluon .
-# sudo docker run --rm -p 3838:3838 demo-autogluon
+# sudo docker build -t demo-pycaret .
+# sudo docker run --rm -p 3838:3838 demo-pycaret

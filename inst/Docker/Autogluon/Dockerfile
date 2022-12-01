@@ -9,11 +9,6 @@ RUN R -q -e 'remotes::install_github("geneseng/NALB")'
 RUN R -q -e 'reticulate::install_miniconda()'
 RUN R -q -e 'NALB::install_autogluon()'
 
-
-# Modify Rprofile
-COPY requirements.R requirements.R
-RUN R -e 'source(file = "requirements.R")'
-
 EXPOSE 3838
 
 # Add code
