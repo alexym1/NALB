@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Alex Yahiaoui Martinez \email{yahiaoui-martinez.alex@geneseng.com}
+\strong{Maintainer}: Alex Yahiaoui Martinez \email{yahiaoui-martinez.alex@outlook.com}
 
 }
 \keyword{internal}

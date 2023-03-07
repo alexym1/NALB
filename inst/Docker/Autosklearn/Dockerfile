@@ -7,7 +7,7 @@ RUN R -q -e 'remotes::install_github("geneseng/NALB")'
 
 # Install Autogluon
 RUN R -q -e 'reticulate::install_miniconda()'
-RUN R -q -e 'NALB::install_pycaret()'
+RUN R -q -e 'NALB::install_autosklearn()'
 
 EXPOSE 3838
 
@@ -15,5 +15,5 @@ EXPOSE 3838
 # [...]
 
 # Run in shell
-# sudo docker build -t demo-pycaret .
-# sudo docker run --rm -p 3838:3838 demo-pycaret
+# sudo docker build -t demo-sklearn .
+# sudo docker run --rm -p 3838:3838 demo-sklearn

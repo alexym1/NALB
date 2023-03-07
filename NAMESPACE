@@ -2,7 +2,7 @@
 
 export(available_automl)
 export(install_autogluon)
-export(install_autokeras)
-export(install_pycaret)
+export(install_autosklearn)
+export(install_flaml)
 export(install_tpot)
 import(reticulate)

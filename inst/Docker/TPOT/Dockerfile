@@ -1,7 +1,6 @@
-FROM rocker/r-ver:4.1.0
+FROM rocker/tidyverse:4.1.0
 
 ## Install R packages
-RUN R -q -e 'install.packages("remotes")'
 RUN R -q -e 'remotes::install_github("rstudio/reticulate")'
 RUN R -q -e 'remotes::install_github("geneseng/NALB")'
 

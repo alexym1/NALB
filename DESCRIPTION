@@ -1,19 +1,18 @@
 Package: NALB
 Type: Package
 Title: An R tool embedding the most famous Python autoML libraries
-Version: 1.0
+Version: 1.0.0
 Authors@R: 
     person(given = "Alex",
            family = "Yahiaoui Martinez",
            role = c("aut", "cre"),
-           email = "yahiaoui-martinez.alex@geneseng.com")
-Maintainer: Alex Yahiaoui Martinez <yahiaoui-martinez.alex@geneseng.com>
+           email = "yahiaoui-martinez.alex@outlook.com")
+Maintainer: Alex Yahiaoui Martinez <yahiaoui-martinez.alex@outlook.com>
 Description: Provide an R interface to autoML libraries wrote in python.
 License: Apache License (>= 2)
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    reticulate
+Imports: reticulate
 RoxygenNote: 7.2.1
 URL: https://github.com/geneseng/NALB
 BugReports: https://github.com/geneseng/NALB/issues

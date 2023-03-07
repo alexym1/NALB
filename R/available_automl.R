@@ -6,21 +6,21 @@ available_automl <- function() {
   df <- data.frame(
     Library = c(
       "AutoGluon",
-      "AutoKeras",
-      "PyCaret",
-      "TPOT"
+      "TPOT",
+      "Flaml",
+      "Autosklearn"
     ),
     Installation = c(
       "install_autogluon()",
-      "install_autokeras()",
-      "install_pycaret()",
-      "install_tpot()"
+      "install_tpot()",
+      "install_flaml()",
+      "install_autosklearn()"
     ),
     Conda = c(
       "reticulate::use_condaenv('r-autogluon', conda = conda_binary(), required = TRUE)",
-      "reticulate::use_condaenv('r-autokeras', conda = conda_binary(), required = TRUE)",
-      "reticulate::use_condaenv('r-pycaret', conda = conda_binary(), required = TRUE)",
-      "reticulate::use_condaenv('r-tpot', conda = conda_binary(), required = TRUE)"
+      "reticulate::use_condaenv('r-tpot', conda = conda_binary(), required = TRUE)",
+      "reticulate::use_condaenv('r-flaml', conda = conda_binary(), required = TRUE)",
+      "reticulate::use_condaenv('r-autosklearn', conda = conda_binary(), required = TRUE)"
     )
   )
 

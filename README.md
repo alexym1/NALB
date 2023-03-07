@@ -1,27 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# NALB <a href=#><img src='inst/logo/NALB.png' align="right" height="139" /></a>
+## NALB
 
-## No AutoML Left Behind
+![](https://img.shields.io/badge/github%20version-1.0.0-green.svg)
 
-The `NALB` package has been designed to provide an R interface to Python
-autoML libraries. `NALB` runs on top of the `reticulate` package making
-a “bridge” between Python and R.
+> No AutoML Left Behind
 
-A `Dockerfile` was provided to use autoML libraries in production.
-
-## System requirements
-
-The package was only tested on linux systems and optimized for Ubuntu
-20.4 / Debian 10.
-
-## AutoML libraries
-
-<a href=#><img src='inst/logo/AutoGluon.png' height="139" /></a>
-<a href=#><img src='inst/logo/autokeras.jpg' height="139" /></a>
-<a href=#><img src='inst/logo/Pycaret.png' height="139" /></a>
-<a href=#><img src='inst/logo/tpot.jpg' height="139" /></a>
+The `NALB` package was designed to provide an R interface to the Python
+autoML libraries. `NALB` runs on top of the `reticulate` package
+bridging Python and R. A `Dockerfile` was provided to use autoML
+libraries in production.
 
 ## Installation
 
@@ -31,7 +20,28 @@ You can install the development version of NALB using:
 devtools::install_github("geneseng/NALB")
 ```
 
-## Maintainer
+## Available autoML libraries
 
-If you got any problems, please contact
-`yahiaoui-martinez.alex@geneseng.com`.
+``` r
+library(NALB)
+available_automl()
+#> Install conda using 'reticulate::install_miniconda()'
+#>       Library          Installation
+#> 1   AutoGluon   install_autogluon()
+#> 2        TPOT        install_tpot()
+#> 3       Flaml       install_flaml()
+#> 4 Autosklearn install_autosklearn()
+#>                                                                                Conda
+#> 1   reticulate::use_condaenv('r-autogluon', conda = conda_binary(), required = TRUE)
+#> 2        reticulate::use_condaenv('r-tpot', conda = conda_binary(), required = TRUE)
+#> 3       reticulate::use_condaenv('r-flaml', conda = conda_binary(), required = TRUE)
+#> 4 reticulate::use_condaenv('r-autosklearn', conda = conda_binary(), required = TRUE)
+```
+
+## Requirements
+
+The package was configured to:
+
+- linux systems Ubuntu 20.4 / Debian 10
+- R version 4.1.0
+- Python version 3.8.13

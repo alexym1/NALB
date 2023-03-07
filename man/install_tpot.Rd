@@ -4,10 +4,12 @@
 \alias{install_tpot}
 \title{Install TPOT and its dependencies}
 \usage{
-install_tpot(python_version = "3.8.13")
+install_tpot(python_version = "3.8.13", numpy_version = "1.24")
 }
 \arguments{
 \item{python_version}{By default, the version is 3.8.13.}
+
+\item{numpy_version}{By default, the version is inferior to 1.24.}
 }
 \description{
 Install TPOT and its dependencies
